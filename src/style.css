@@ -1,0 +1,310 @@
+/* styles.css */
+
+/* AlbumList component styles */
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Container holding the list */
+.album-list-container {
+  /* text-align: center; */
+  max-height: 90vh;
+  /* Adjust the maximum height as needed */
+  overflow-y: auto;
+  border: 5px solid #0f1877;
+  padding: 10px;
+  /* margin-bottom: 5px; */
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.heading2 {
+  text-align: center;
+  color: #0f1877;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+}
+
+.add-album-main{
+  border: 2px solid red;
+  margin: 10px 0px;
+}
+
+.add-album {
+  text-align: center;
+}
+
+/* Album component styles */
+/* div {
+  border: 1px solid #db1919;
+  padding: 10px;
+  margin-bottom: 10px;
+} */
+
+h3 {
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 1.3rem;
+  margin: 0% 3%;
+}
+
+button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* AddAlbumForm and UpdateAlbumForm styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #080849;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 2px;
+  margin-bottom: 20px;
+  width: 20%;
+  border: 3px solid #000;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.add-album-input {
+  margin: 0% 2%;
+}
+
+/* .add {
+  width: 10%;
+  color: #080849;
+  border-radius: 55px;
+  border-radius: 55px;
+  background: #f1f1f1;
+  box-shadow:  23px 23px 46px #d6d6d6,
+               -23px -23px 46px #ffffff;
+} */
+
+/* start */
+
+.button {
+  position: relative;
+  width: 11%;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  margin: 2% 50%;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+/* end */
+
+/* Delte button start */
+
+.ui-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(202, 25, 25);
+  border-style: solid;
+  background-color: transparent;
+  border-color: rgb(202, 25, 25);
+  width: 120px;
+  height: 40px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 5% 3%;
+}
+.ui-btn:hover {
+  color: rgb(247, 247, 247);
+  background-color: rgb(202, 25, 25);
+  border-color: rgb(202, 25, 25);
+  text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+  box-shadow: 0 0 50px rgb(202, 25, 25), 0 0 30px rgb(202, 25, 25),
+    0 0 60px rgb(202, 25, 25), 0 0 120px rgb(202, 25, 25);
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  letter-spacing: 3px;
+}
+.ui-btn:active {
+  width: 115px;
+  height: 38px;
+  letter-spacing: 0px;
+}
+
+/* button end */
+
+/* button {
+  padding: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} */
+
+/* EDIT Button start */
+
+.edit-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  color: #2838e6;
+  border-style: solid;
+  background-color: transparent;
+  border-color: #2838e6;
+  width: 120px;
+  height: 40px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 5% 3%;
+}
+.edit-btn:hover {
+  color: rgb(247, 247, 247);
+  background-color: #2838e6;
+  border-color: #2838e6;
+  text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+  box-shadow: 0 0 50px #2838e6, 0 0 30px #2838e6,
+    0 0 60px #2838e6, 0 0 120px #2838e6;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  letter-spacing: 3px;
+}
+.edit-btn:active {
+  width: 115px;
+  height: 38px;
+  letter-spacing: 0px;
+}
+
+/* EDIT button end */
+
+.heading3{
+  color: #34974d;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+.label-title{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.input-edit{
+  margin: 10px 2%;
+  height: 30px;
+  border: 3px solid #000;
+}
+
+/* Update Button start */
+
+.up-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  color: #137011;
+  border-style: solid;
+  background-color: transparent;
+  border-color: #137011;
+  width: 120px;
+  height: 40px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 1% 50%;
+}
+.up-btn:hover {
+  color: rgb(247, 247, 247);
+  background-color: #137011;
+  border-color: #137011;
+  text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+  box-shadow: 0 0 20px #137011, 0 0 20px #137011,
+    0 0 40px #137011, 0 0 90px #137011;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  letter-spacing: 3px;
+}
+.up-btn:active {
+  width: 115px;
+  height: 38px;
+  letter-spacing: 0px;
+}
+
+/* Update button end */
+
+/* Responsive styles (adjust as needed) */
+@media (max-width: 600px) {
+  div {
+    margin: 10px;
+  }
+}
